@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Zen Go</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;900&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+        overscroll-behavior: none; /* Prevent pull-to-refresh */
+        touch-action: manipulation; /* Improve touch response */
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f4f4f5; /* zinc-100 */
+      }
+      #root {
+        height: 100%;
+      }
+      .font-serif-jp {
+        font-family: 'Noto Serif JP', serif;
+      }
+      /* Custom wood texture simulation for the board */
+      .wood-texture {
+        background-color: #eab366;
+        background-image: 
+          linear-gradient(45deg, rgba(0,0,0,0.03) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.03) 75%, rgba(0,0,0,0.03)), 
+          linear-gradient(45deg, rgba(0,0,0,0.03) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.03) 75%, rgba(0,0,0,0.03));
+        background-size: 20px 20px;
+        background-position: 0 0, 10px 10px;
+        box-shadow: inset 0 0 40px rgba(0,0,0,0.1);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

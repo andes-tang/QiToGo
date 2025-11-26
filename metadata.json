@@ -1,0 +1,5 @@
+{
+  "name": "Qi to GO",
+  "description": "A beautiful, responsive implementation of the ancient game of Go (Weiqi/Baduk) featuring an AI opponent powered by Gemini with multiple difficulty levels.",
+  "requestFramePermissions": []
+}
